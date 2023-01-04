@@ -1,0 +1,19 @@
+{
+  "baseBranches": ["main"],
+  "rebaseWhen": "conflicted",
+  "labels": ["dependencies"],
+  "automergeStrategy": "merge-commit",
+  "packageRules": [
+    {
+      "matchManagers": ["dockerfile"],
+      "matchPackagePatterns": ["alpine"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ]
+}
