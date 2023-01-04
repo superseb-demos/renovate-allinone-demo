@@ -3,6 +3,7 @@
   "rebaseWhen": "conflicted",
   "labels": ["dependencies"],
   "automergeStrategy": "merge-commit",
+  "ignoreTests": true,
   "packageRules": [
     {
       "matchManagers": ["dockerfile"],
