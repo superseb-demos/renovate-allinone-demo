@@ -8,6 +8,10 @@
       "matchManagers": ["dockerfile"],
       "matchPackagePatterns": ["alpine"],
       "separateMinorPatch": true,
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "matchPackagePatterns": ["alpine"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
     },
