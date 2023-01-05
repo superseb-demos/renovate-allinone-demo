@@ -1,3 +1,3 @@
-FROM alpine:3.16.2@sha256:1304f174557314a7ed9eddb4eab12fed12cb0cd9809e4c28f29af86979a3c870
+FROM alpine:3.17.0@sha256:c0d488a800e4127c334ad20d61d7bc21b4097540327217dfab52262adc02380c
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
