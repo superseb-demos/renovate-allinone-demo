@@ -15,8 +15,7 @@ on:
         type: string
   # Run twice in the early morning for initial and follow up steps (create pull request and merge)
   schedule:
-    - cron: '30 4 * * *'
-    - cron: '30 6 * * *'
+    - cron: '0 4,5 * * Sat'
 concurrency: renovate
 jobs:
   renovate:
